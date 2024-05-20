@@ -1,0 +1,292 @@
+*, body, html {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	width:100; /* <-- This should be 'width: 100%;' */
+	font: 1.02em "Open Sans", sans-serif;
+}
+
+/* Menu styles */
+.menu {
+	width: 100%;
+	background-color: black;
+	color: #eee;
+	height: 60px;
+}
+
+.menu #main {
+	float: left;
+	height: 30px;
+	padding: 15px 30px;
+	font-size: 1.3em;
+	line-height: 30px;
+}
+
+.menu > ul {
+	margin: 0;
+	padding: 0;
+	float: left;
+	list-style-type: none;
+}
+
+.menu > ul > li {
+	float: left;
+}
+
+.menuElement {
+	display: inline-block;
+	padding: 15px 20px;
+	height: 30px;
+	line-height: 30px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.menuElement:hover {
+	background-color: gray;
+	margin-top: 5px;
+	padding-bottom: 40px;
+}
+
+#moveMenu {
+	float: right;
+}
+
+.dropContent {
+	position: absolute;
+	top: 60px;
+	overflow: hidden;
+	background-color: black;
+	max-height: 0;
+}
+
+.dropContent a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.drop {
+	padding: 0;
+}
+
+.drop ul {
+	width: 100%;
+	padding-left: 4px;
+	margin: 0;
+	list-style-type: none;
+}
+
+.drop ul li a {
+	display: inline-block;
+	padding: 10px 5.5px;
+}
+
+.drop ul li:hover {
+	background-color: gray;
+}
+
+.menuElement:focus {
+	background-color: #333;
+	margin-top: 5px;
+	padding-bottom: 40px;
+}
+
+.menu ul li:hover .dropContent {
+	max-height: 400px;
+	transition: max-height 0.1s ease-in;
+}
+
+/* Other styles */
+#logoImg {
+	margin: 75px;
+	width: 330px;
+	height: 180px;
+	border: solid 4px green;
+	padding: 0px;
+	float: right;
+}
+
+#about {
+	margin: 40px;
+	margin-right: 5px;
+	padding: 0px;
+	font-size: x-large;
+	color: black;
+}
+
+#dAbout {
+	margin-left: 10px;
+	font-size: large;
+}
+
+.titel {
+	padding: 15px;
+	margin: 2px;
+	margin-left: 760px;
+}
+
+#marketing {
+	margin: 60px;
+	bottom: 50px;
+	height: 50px;
+	width: 530px;
+	border: solid 4px green;
+	padding: 0px;
+	font-size: xx-large;
+	text-align: center;
+	font-weight: bolder;
+}
+
+#service {
+	padding: 5px;
+	font-size: x-large;
+	text-align: left;
+	font-weight: bold;
+	margin-bottom: 50px;
+}
+
+#it {
+	font-style: italic;
+	font-weight: bolder;
+}
+
+#underline {
+	font-size: small;
+	color: #333;
+}
+
+.section1 {
+	background: url("images/parking.th.avif") left;
+	background-repeat: no-repeat;
+	height: 493px;
+}
+
+.section2 {
+}
+
+.section3 {
+	height: 420px;
+}
+
+.section4 {
+	height: 50px;
+}
+
+.advantages {
+	box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2);
+	width: 20rem;
+	margin: 10px;
+	margin-left: 100px;
+}
+
+.allAdvantages {
+	display: flex;
+}
+
+#imgAd {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.advantageImg {
+	width: 100%;
+	height: 20rem;
+}
+
+#advantage {
+	padding: 2px 16px;
+	text-align: center;
+}
+
+.bold {
+	font-weight: bolder;
+	height: 50px;
+	font-size: xx-large;
+	margin-left: 30px;
+}
+
+.services {
+	height: 50px;
+	font-size: large;
+	margin-left: 30px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0;
+	transition: 0.3s;
+	width: 20rem;
+	padding: 20px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0;
+}
+
+.textCard {
+	padding: 2px 16px;
+}
+
+.imgCard {
+	width: 100%;
+	height: 20rem;
+}
+
+.displayCard {
+	display: flex;
+	margin-left: 60px;
+}
+
+.red{
+	color:red;
+}
+
+.large{
+	font-size:x-large;
+}
+
+.br{
+	height: 200px;
+}
+
+.br1{
+	height: 130px;
+}
+
+#Hlink {
+	font-size: x-large;
+	color: #333;
+}
+
+#color {
+	color: #333;
+	margin: 30px;
+}
+
+#contact { 
+	text-align: center;
+	margin-top: 20px;
+}
+
+#header {
+	font-size: 24px;
+	font-weight: bold;
+	color: #333;
+}
+
+#contact img { 
+	vertical-align: middle;
+}
+
+#contact a { 
+	text-decoration: none;
+	color: black;
+}
+
+#Logos {
+	margin-top: 20px;
+}
+
+#Logos img {
+	margin-right: 20px;
+}

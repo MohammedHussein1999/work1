@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Form Validation</title>
+
+<script>
+// Function to validate the form
+function validation() {
+  var directive;
+  var fname = document.getElementById("fname").value;
+  var lname = document.getElementById("lname").value;
+  var email = document.getElementById("email").value;
+  var subject = document.getElementById("subject").value;
+  var message = document.getElementById("message").value;
+  var errorMessage = document.getElementById("errorMessage");
+
+  errorMessage.style.padding = "12px";
+
+  // Check if the first name is valid
+  if (fname.length < 2) {
+    directive = " Enter valid first name";
+    errorMessage.innerHTML = directive;
+    return false;
+  }
+  
+  // Check if the last name is valid
+  if (lname.length < 3) {
+    directive = " Enter valid last name";
+    errorMessage.innerHTML = directive;
+    return false;
+  }
+  
+  // Check if the email is valid
+  if (email.length < 4) {
+    directive = " Enter valid email";
+    errorMessage.innerHTML = directive;
+    return false;
+  }
+  
+  // Check if the subject is valid
+  if (subject.length < 3) {
+    directive = " Enter valid subject";
+    errorMessage.innerHTML = directive;
+    return false;
+  }
+  
+  // Check if the message is valid
+  if (message.length <= 50) {
+    directive = " Enter more than 49 letters in the message";
+    errorMessage.innerHTML = directive;
+    return false;
+  }
+
+  // If all fields are valid, show success message
+  alert(" Submitted Successfully");
+  return true;
+}
+</script>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  font: "Open Sans", sans-serif;
+}
+
+body {
+  background: gray;
+}
+
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 350px;
+  width: 100%;
+  background: #eee;
+  padding: 26px;
+  border-radius: 4px;
+  border: 4px solid green;
+}
+
+.form h1 {
+  text-align: center;
+  margin-bottom: 21px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: black;
+}
+
+.form .input {
+  margin-bottom: 11px;
+}
+
+.form .input input[type="text"],
+input[type="email"],
+.form textarea {
+  border: 1.5px solid black;
+  width: 100%;
+  padding: 11px;
+}
+
+.form textarea {
+  resize: none;
+  height: 81px;
+}
+
+.form .submit input[type="submit"] {
+  border: 0px;
+  margin-top: 16px;
+  padding: 11px;
+  text-align: center;
+  width: 100%;
+  background: green;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-weight: bold;
+  border-radius: 26px;
+  cursor: pointer;
+}
+
+#errorMessage {
+  margin-bottom: 21px;
+  background: red;
+  padding: 0px;
+  text-align: center;
+  font-size: 15px;
+  transition: all 0.5s ease;
+}
+</style>
+</head>
+
+<body>
+<div class="form">
+ 
+<h1>Send us <br>a message</h1>
+  
+<!-- Error message container -->
+<div id="errorMessage"></div>
+
+<!-- Form -->
+<form onsubmit="return validation();">
+    
+<div class="input">
+  <input type="text" placeholder="First name" id="fname">
+</div>
+    
+<div class="input">
+  <input type="text" placeholder="Last name" id="lname">
+</div>
+    
+<div class="input">
+  <input type="email" placeholder="E-mail" id="email">
+</div>
+    
+<div class="input">
+  <input type="text" placeholder="Subject" id="subject">
+</div>
+    
+<div class="input">
+  <textarea placeholder="Message" id="message"></textarea>
+</div>
+   
+<div class="submit">
+  <input type="submit">
+</div>
+ 
+</form>
+</div>
+
+</body>
+</html>
